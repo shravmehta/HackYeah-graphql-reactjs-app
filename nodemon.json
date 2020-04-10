@@ -1,7 +1,7 @@
 {
     "env": {
-        "MONGO_USER": "shrav",
-        "MONGO_PWD": "0S6ceNdJG1cp0Bne",
-        "MONGO_DB": "eventdb_dev"
+        "MONGO_USER": "MongoDB Atlas username",
+        "MONGO_PWD": "MongoDB Atlas Password",
+        "MONGO_DB": "Your Database Name"
     }
 }
