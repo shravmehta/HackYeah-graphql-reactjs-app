@@ -1,16 +1,16 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-var eventSchema = new Schema({
-    event_title: {
+const eventSchema = new Schema({
+    title: {
         type: String,
         required: true
     },
-    details: {
+    description: {
         type: String,
         required: true
     },
-    price:{
+    fees: {
         type: Number,
         required: true
     },
@@ -19,9 +19,10 @@ var eventSchema = new Schema({
         required: true
     },
     creator:{
-        type: Schema.Types.ObjectId, //returns the objectID defined by mongodb
-        ref: 'User' //reference to the event model and let mongoose merge the databases
+        type: Schema.Types.ObjectId,
+        ref: 'User'
     }
+
 });
 
-module.exports = mongoose.model('Event', eventSchema);
+module.exports = mongoose.model('Event',eventSchema);
